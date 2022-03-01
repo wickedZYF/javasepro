@@ -1,4 +1,4 @@
-package demo;
+package com.zyf.demo;
 
 public class Goods {
     int id; //编号

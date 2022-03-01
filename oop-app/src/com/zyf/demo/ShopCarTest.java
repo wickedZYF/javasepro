@@ -1,6 +1,5 @@
-package demo;
+package com.zyf.demo;
 
-import javax.management.Query;
 import java.util.Scanner;
 
 /**

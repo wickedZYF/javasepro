@@ -1,4 +1,4 @@
-package memory;
+package com.zyf.memory;
 
 public class Student {
     String name;
