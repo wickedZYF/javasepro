@@ -20,7 +20,11 @@ public class StreamDemo05 {
 
        Stream<String> s1=list.stream().filter(s -> s.startsWith("张"));
        List<String> zhangList =s1.collect(Collectors.toList());
-        System.out.println(zhangList);
+       zhangList.add("java1");
+       System.out.println(zhangList);
+//        List<String> list1=s1.toList();
+//        list1.add("java");
+//        System.out.println(list1);
 
         //注意注意注意，流只能使用一次
         Stream<String>s2=list.stream().filter(s -> s.startsWith("张"));
