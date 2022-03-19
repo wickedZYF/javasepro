@@ -1,6 +1,7 @@
 package com.zyf.bean;
 
 import javax.xml.crypto.Data;
+import java.util.Date;
 
 public class Movie {
     private String name;
@@ -9,19 +10,18 @@ public class Movie {
     private double time;
     private double price;
     private int number;  //余票
-    private Data starTime;//放映时间
+    private Date startTime;//放映时间
 
     public Movie() {
     }
 
-    public Movie(String name, String actor, double score, double time, double price, int number, Data starTime) {
+    public Movie(String name, String actor, double time, double price, int number, Date startTime) {
         this.name = name;
         this.actor = actor;
-        this.score = score;
         this.time = time;
         this.price = price;
         this.number = number;
-        this.starTime = starTime;
+        this.startTime = startTime;
     }
 
     public String getName() {
@@ -72,11 +72,11 @@ public class Movie {
         this.number = number;
     }
 
-    public Data getStarTime() {
-        return starTime;
+    public Date getStartTime() {
+        return startTime;
     }
 
-    public void setStarTime(Data starTime) {
-        this.starTime = starTime;
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
     }
 }
